@@ -244,11 +244,11 @@ if (APPLE)
   set_target_properties(
     ${LIBLAS_C_LIB_NAME}
     PROPERTIES
-    INSTALL_NAME_DIR "@rpath" BUILD_WITH_INSTALL_RPATH ON)
+    INSTALL_NAME_DIR "${CMAKE_INSTALL_PREFIX}/lib")
   set_target_properties(
     ${LIBLAS_LIB_NAME}
     PROPERTIES
-    INSTALL_NAME_DIR "@rpath" BUILD_WITH_INSTALL_RPATH ON)
+    INSTALL_NAME_DIR "${CMAKE_INSTALL_PREFIX}/lib")
 endif()
 
 ###############################################################################
